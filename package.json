@@ -1,0 +1,19 @@
+{
+  "name": "qa-teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "jest": "^29.4.3",
+    "jest-puppeteer": "^7.0.1",
+    "puppeteer": "^19.7.2"
+  },
+  "description": ""
+}
