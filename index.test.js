@@ -9,7 +9,7 @@ describe ( 'Teste Github', () => {
     beforeAll (async() => {
         browser = await puppeteer.launch({
             headless: false,
-            slowMo: 70,
+            slowMo: 150,
             args: ["--start-maximized"]
         })
     page = await browser.newPage();
@@ -164,7 +164,7 @@ describe ( 'Teste Github', () => {
         } catch (error) {
           throw new Error('Erro ao deslogar:' + error);
         }
-    });
+    },20000);
       
       
     it('Validar que foi possível deslogar', async () => {
@@ -175,7 +175,7 @@ describe ( 'Teste Github', () => {
         } catch (error) {
           throw new Error('Erro ao validar que foi possível deslogar:' + error);
         }
-    });
+    },20000);
       
       it('Encerrar o teste', () => {
         console.log('Teste encerrado!');
